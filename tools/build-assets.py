@@ -25,8 +25,9 @@ SITE = REPO / "docs"
 IMG = SITE / "img" / "deep-sea-panic"
 FONT_OUT = SITE / "fonts"
 
-NAVY = (14, 34, 54)         # #0E2236, the site's panel colour
-NAVY_DEEP = (7, 18, 31)     # #07121F, the site's background
+PLUM = (30, 22, 41)         # #1E1629, the studio pages' card colour
+PLUM_DEEP = (20, 15, 28)    # #140F1C, the studio pages' background
+MANE = (120, 40, 170)       # a glow in the donkey's purple
 
 # The five screenshots used on itch.io, in the same order.
 SCREENSHOTS = [
@@ -127,15 +128,15 @@ def logo() -> None:
     fit(peek, 128).save(out / "donkey-128.webp", "WEBP", quality=90, method=6)
     fit(peek, 48).save(SITE / "favicon-48.png", optimize=True)
     fit(peek, 192).save(SITE / "icon-192.png", optimize=True)
-    # iPhones fill see-through corners with black, so this one gets the navy behind it.
-    fit(peek, 180, pad=14, bg=NAVY).convert("RGB").save(SITE / "apple-touch-icon.png", optimize=True)
+    # iPhones fill see-through corners with black, so this one gets the plum behind it.
+    fit(peek, 180, pad=14, bg=PLUM).convert("RGB").save(SITE / "apple-touch-icon.png", optimize=True)
     print("  img/donkey-128.webp, favicon-48.png, icon-192.png, apple-touch-icon.png")
 
     # Link preview for the home page (1200 x 630 is what Facebook, Discord and others expect).
-    card = Image.new("RGB", (1200, 630), NAVY_DEEP)
+    card = Image.new("RGB", (1200, 630), PLUM_DEEP)
     glow = Image.new("L", (1200, 630), 0)
     ImageDraw.Draw(glow).ellipse((250, -260, 950, 560), fill=110)
-    card.paste(Image.new("RGB", (1200, 630), (34, 92, 128)), (0, 0), glow.filter(ImageFilter.GaussianBlur(120)))
+    card.paste(Image.new("RGB", (1200, 630), MANE), (0, 0), glow.filter(ImageFilter.GaussianBlur(120)))
     art = full.resize((round(full.width * 560 / full.height), 560), Image.LANCZOS)
     card.paste(art, ((1200 - art.width) // 2, 35), art)
     card.save(SITE / "img" / "half-ass-games-share.jpg", "JPEG", quality=86, optimize=True, progressive=True)

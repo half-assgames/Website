@@ -3,10 +3,10 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Half-Ass Games: tiny games, made with heart</title>
-  <meta name="description" content="Half-Ass Games is a one-person indie studio in Australia making bright, bouncy arcade games. Play Deep Sea Panic! free, with no ads.">
+  <title>Half-Ass Games: indie games, made with heart</title>
+  <meta name="description" content="Half-Ass Games is Josh's one-person indie studio in Australia. Play Deep Sea Panic!, and see what's in the works: a VR magic academy and a TV-show fighting game.">
   <link rel="canonical" href="https://half-assgames.com/">
-  <meta name="theme-color" content="#07121F">
+  <meta name="theme-color" content="#140F1C">
   <link rel="icon" href="favicon-48.png" sizes="48x48" type="image/png">
   <link rel="icon" href="icon-192.png" sizes="192x192" type="image/png">
   <link rel="apple-touch-icon" href="apple-touch-icon.png">
@@ -16,7 +16,7 @@
   <meta property="og:type" content="website">
   <meta property="og:site_name" content="Half-Ass Games">
   <meta property="og:title" content="Half-Ass Games">
-  <meta property="og:description" content="A tiny indie studio in Australia making bright, bouncy arcade games. Free to play, no ads.">
+  <meta property="og:description" content="Indie games, made with my whole heart. A one-person studio in Australia.">
   <meta property="og:url" content="https://half-assgames.com/">
   <meta property="og:image" content="https://half-assgames.com/img/half-ass-games-share.jpg">
   <meta property="og:image:width" content="1200">
@@ -41,12 +41,12 @@
 
   <header class="site-header">
     <div class="wrap">
-      <a class="brand" href="./" aria-current="page">
+      <a class="brand" href="./">
         <img src="img/donkey-128.webp" width="44" height="44" alt="">
         <span><span class="half">Half-Ass</span> Games</span>
       </a>
       <nav class="site-nav" aria-label="Main">
-        <a href="deep-sea-panic/">Deep Sea Panic!</a>
+        <a href="#games">Games</a>
         <a href="#say-hi">Say hi</a>
       </nav>
     </div>
@@ -54,21 +54,23 @@
 
   <main id="main">
     <section class="hero">
-      <div class="bubbles" aria-hidden="true"><span></span><span></span><span></span><span></span><span></span><span></span><span></span></div>
       <div class="wrap">
         <h1><img src="img/half-ass-games-logo.webp" width="560" height="698" alt="Half-Ass Games" fetchpriority="high"></h1>
-        <p class="tagline">Tiny games, made with my whole heart.</p>
+        <p class="tagline">Indie games, <span class="nowrap">made with my whole heart.</span></p>
         <p class="hello">
-          Hi, I'm Josh! Half-Ass Games is my one-person indie studio in Australia
-          (the name's a joke, promise). I make bright, bouncy arcade games that are quick to
-          pick up, free to play and never interrupted by ads.
+          Hi, I'm Josh! Half-Ass Games is my one-person indie studio in Australia. I make all
+          sorts of games: a frantic submarine arcade game, a fighting game inside a rogue TV
+          channel, and a VR sword-and-magic academy.
         </p>
       </div>
     </section>
 
-    <section class="section" aria-labelledby="game-title">
+    <section class="section" id="games" aria-labelledby="games-title">
       <div class="wrap">
-        <article class="card feature">
+        <h2 id="games-title">Games</h2>
+
+        <h3 class="group-title">Out now</h3>
+        <article class="card feature" aria-labelledby="dsp-title">
           <a class="art" href="deep-sea-panic/" tabindex="-1" aria-hidden="true">
             <img src="img/deep-sea-panic/key-art-1024.webp"
                  srcset="img/deep-sea-panic/key-art-640.webp 640w, img/deep-sea-panic/key-art-1024.webp 1024w"
@@ -77,57 +79,76 @@
           </a>
           <div class="body">
             <div class="copy">
-            <h2 id="game-title" class="title-split"><span class="sea">Deep Sea</span> <span class="panic">Panic!</span></h2>
-            <p>
-              Steer a tiny submarine through drifting sea mines, grab sinking treasure, and fire a
-              pulse that sets off huge chain reactions. Five subs, five different pulses, and a whole
-              lot of panic.
-            </p>
+              <h3 id="dsp-title" class="title-split"><span class="sea">Deep Sea</span> <span class="panic">Panic!</span></h3>
+              <p>
+                Steer a tiny submarine through drifting sea mines, grab sinking treasure, and fire a
+                pulse that sets off huge chain reactions. Five subs, five different pulses, and a whole
+                lot of panic. My first published game!
+              </p>
             </div>
             <div class="actions">
-            <ul class="chips" aria-label="At a glance">
-              <li>Free</li>
-              <li>No ads</li>
-              <li>Plays offline</li>
-            </ul>
-            <div class="buttons">
-              <a class="btn btn-main" href="deep-sea-panic/">Meet the game</a>
-              <a class="btn btn-soft" href="https://half-assgames.itch.io/deepseapanic">Play on PC</a>
-            </div>
-            <p class="status">
-              On Android? It's coming to Google Play soon.
-              <a href="deep-sea-panic/#android">Help me test it first</a>.
-            </p>
+              <ul class="chips" aria-label="At a glance">
+                <li>Free</li>
+                <li>No ads</li>
+                <li>PC and Android</li>
+              </ul>
+              <div class="buttons">
+                <a class="btn btn-main" href="deep-sea-panic/">Meet the game</a>
+                <a class="btn btn-soft" href="https://half-assgames.itch.io/deepseapanic">Play on PC</a>
+              </div>
+              <p class="status">
+                On Android? It's coming to Google Play soon.
+                <a href="deep-sea-panic/#android">Help me test it first</a>.
+              </p>
             </div>
           </div>
         </article>
+
+        <h3 class="group-title">In development</h3>
+        <div class="grid">
+          <article class="card project p-arcane">
+            <p class="tag">Playable prototype</p>
+            <h3>Arcane Practicum</h3>
+            <p class="genre">VR · sword and sorcery training</p>
+            <p>
+              Train as a cadet at a magic academy. Learn real sword swings and spell casting, then
+              put them together in tougher and tougher lessons. Mannequins and turrets: beware.
+            </p>
+          </article>
+
+          <article class="card project p-channel">
+            <p class="tag">On itch.io · in development</p>
+            <h3>Channel: NULL</h3>
+            <p class="genre">Fighting game · PC</p>
+            <p>
+              Lights. Camera. Fight. A forgotten TV-network AI drags characters from old shows
+              into one never-ending televised brawl, with clapperboards, CRT static and a director
+              yelling "Cut!". I'm making it in my game development course.
+            </p>
+            <div class="buttons">
+              <a class="btn btn-soft" href="https://half-assgames.itch.io/channel-null">See it on itch.io</a>
+            </div>
+          </article>
+        </div>
+
+        <p class="small" style="margin-top: 18px;">
+          Want to hear when something new is playable?
+          <a href="https://half-assgames.itch.io/">Follow Half-Ass Games on itch.io</a>.
+        </p>
       </div>
     </section>
 
-    <section class="section" aria-labelledby="more-title">
+    <section class="section" id="say-hi" aria-labelledby="hi-title">
       <div class="wrap">
-        <div class="grid">
-          <div class="card">
-            <h2 id="more-title">More on the way</h2>
-            <p>
-              More tiny games are bubbling away. Follow Half-Ass Games on itch.io and you'll hear
-              about them first.
-            </p>
-            <div class="buttons">
-              <a class="btn btn-soft" href="https://half-assgames.itch.io/">Follow on itch.io</a>
-            </div>
-          </div>
-
-          <div class="card" id="say-hi">
-            <h2>Say hi</h2>
-            <p>Questions, ideas, bug reports, or just want to say hello? I'd love to hear from you.</p>
-            <a class="contact-email" href="mailto:joshua@half-assgames.com">joshua@half-assgames.com</a>
-            <p class="small">
-              Playing Deep Sea Panic!? The
-              <a href="https://docs.google.com/forms/d/e/1FAIpQLScMLXOUElsej9TgpEuanRhJ2T6ZHBi3X1LBrDeRtGZzReHrkA/viewform">feedback form</a>
-              is the quickest way to tell me what you think.
-            </p>
-          </div>
+        <div class="card">
+          <h2 id="hi-title">Say hi</h2>
+          <p>Questions, ideas, bug reports, or just want to say hello? I'd love to hear from you.</p>
+          <a class="contact-email" href="mailto:joshua@half-assgames.com">joshua@half-assgames.com</a>
+          <p class="small">
+            Playing Deep Sea Panic!? The
+            <a href="https://docs.google.com/forms/d/e/1FAIpQLScMLXOUElsej9TgpEuanRhJ2T6ZHBi3X1LBrDeRtGZzReHrkA/viewform">feedback form</a>
+            is the quickest way to tell me what you think.
+          </p>
         </div>
       </div>
     </section>

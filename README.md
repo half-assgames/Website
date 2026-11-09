@@ -8,7 +8,7 @@ GitHub Pages. To put it online the first time, follow [DEPLOY.md](DEPLOY.md).
 | Path | What it is |
 |---|---|
 | `docs/` | **The website.** GitHub publishes everything in this folder (that's why it's called docs) |
-| `docs/index.html` | Home page: the studio, the game, say hi |
+| `docs/index.html` | Home page: the studio, all the games, why "Half-Ass", say hi |
 | `docs/deep-sea-panic/index.html` | The Deep Sea Panic! page |
 | `docs/deep-sea-panic/privacy/index.html` | The privacy policy Google Play links to |
 | `docs/404.html` | The "Lost at sea!" page for broken links |
@@ -27,6 +27,22 @@ black window to stop it.
 
 Open the page's `index.html` in any text editor (VS Code is great), change the text between
 the tags, save, and refresh the preview.
+
+## The games on the home page
+
+Each game is a card in the **Games** section of `docs/index.html`, under **Out now** or
+**In development**. To add a game, copy a whole `<article class="card project ...">...</article>`
+block, change the words, and give it a little tag like `Playable prototype` or `On itch.io`.
+
+Each card's colour stripe comes from its class (`p-arcane`, `p-channel`), set in
+`docs/css/site.css`. Copy one of those lines to give a new game its own colours.
+
+## Two looks
+
+Studio pages (home, 404) use the donkey's colours: pink-red, purple and cream on dark plum.
+Deep Sea Panic!'s pages have `<body class="theme-sea">`, which switches them to the game's
+deep-sea colours. A future game page can get its own look the same way: copy the
+`.theme-sea { ... }` block in `site.css`, rename it, and change the colours.
 
 ## Change the screenshots, key art or logo
 
