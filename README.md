@@ -1,17 +1,18 @@
 # Half-Ass Games website
 
 The studio website at **https://half-assgames.com**: plain HTML and CSS, hosted free on
-GitHub Pages. To put it online the first time, follow [DEPLOY.md](DEPLOY.md).
+GitHub Pages. It's live: [DEPLOY.md](DEPLOY.md) is how it was set up, and has fixes if
+something breaks.
 
 ## What's where
 
 | Path | What it is |
 |---|---|
 | `docs/` | **The website.** GitHub publishes everything in this folder (that's why it's called docs) |
-| `docs/index.html` | Home page: the studio, all the games, why "Half-Ass", say hi |
+| `docs/index.html` | Home page: the studio, the games, say hi |
 | `docs/deep-sea-panic/index.html` | The Deep Sea Panic! page |
 | `docs/deep-sea-panic/privacy/index.html` | The privacy policy Google Play links to |
-| `docs/404.html` | The "Lost at sea!" page for broken links |
+| `docs/404.html` | The "Page not found" page for broken links |
 | `docs/css/site.css` | All the colours, fonts and layout |
 | `docs/img/`, `docs/fonts/` | Images and fonts, made by the build script below |
 | `docs/CNAME` | Tells GitHub the site's address. Don't delete it |
