@@ -67,17 +67,12 @@ the matching `<img>` lines in `docs/deep-sea-panic/index.html`.
 **GitHub Desktop:** type a short summary of the change, click **Commit to main**, then
 **Push origin**. The live site updates in about a minute.
 
-## When Deep Sea Panic! launches on Google Play
+## Deep Sea Panic! on Google Play
 
-1. In `docs/deep-sea-panic/index.html`, find the two `ANDROID` comments in the "Get it"
-   section. Delete the tester card and un-comment the "Get it on Google Play" card.
-2. In the same file, change the top button `Android: help test it` (`href="#android"`) to
-   say `Get it on Google Play`.
-3. In `docs/index.html`, change the line "On Android? It's coming to Google Play soon..." to
-   point to Google Play.
-4. Optional: swap the text button for Google's official badge from
-   <https://play.google.com/intl/en_us/badges/>. Google asks that you use the badge as-is.
-5. Preview, then publish.
+It launched on 25 Nov 2026. The tester steps are gone, and the game page and home page link to
+<https://play.google.com/store/apps/details?id=com.halfassgames.deepseapanic>. The links are
+plain buttons in the site's style. To use Google's official badge instead, get it from
+<https://play.google.com/intl/en_us/badges/> and use it as-is, as Google asks.
 
 ## Good to know
 
