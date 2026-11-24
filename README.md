@@ -12,6 +12,7 @@ something breaks.
 | `docs/index.html` | Home page: the studio, the games, say hi |
 | `docs/deep-sea-panic/index.html` | The Deep Sea Panic! page |
 | `docs/deep-sea-panic/privacy/index.html` | The privacy policy Google Play links to |
+| `docs/deep-sea-panic/terms/index.html` | The terms of service for the game and the Sub Pack |
 | `docs/404.html` | The "Page not found" page for broken links |
 | `docs/css/site.css` | All the colours, fonts and layout |
 | `docs/img/`, `docs/fonts/` | Images and fonts, made by the build script below |
